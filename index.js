@@ -7,8 +7,6 @@ const toggleBox = document.getElementById("toggleBox");
 const loadBtn = document.getElementById("loadBtn");
 const resourceList = document.getElementById("resourceList");
 
-let clickCount = 0;
-
 const resources = [
   "MDN Web Docs",
   "W3Schools JavaScript Tutorial",
@@ -17,6 +15,7 @@ const resources = [
   "JavaScript.info"
 ];
 
+let clickCount = 0;
 clickBtn.addEventListener("click", function () {
   clickMessage.textContent = "✅ Click registered!";
   clickCount++;
